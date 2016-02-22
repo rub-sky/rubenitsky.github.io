@@ -57,7 +57,28 @@
     margin-top: 5px;
  }
 
- footer {
-    margin-top: 25px;
-    margin-bottom: 15px;
+ .footer {
+    margin-top: 20px;
+    padding-bottom: 35px;
+    color: #afafaf;
+    /*background-color: #efefef;*/
+    padding: 20px 10px;
+ }
+
+ .fill {
+    min-height: 100%;
+ }
+
+ .sidemenu.active {
+    background-color: #99ccff !important;
+    /*background-color: #ffffff !important;
+    color: #000000 !important;
+    border: 1px solid #cfcfcf !important;
+    border-left: 7px solid #99ccff !important;
+    padding-left: 15px;
+    padding-bottom: 10px;*/
+ }
+
+ .sidemenu {
+
  }
