@@ -84,7 +84,7 @@
                 var itemId = $(this).data("item");
 
                 // Set the item to be active after removing other active items.
-                $(".sidemenu, .active").removeClass("active").removeClass("left-border-emph");
+                $(".sidemenu.active").removeClass("active").removeClass("left-border-emph");
                 $(this).addClass("active").addClass("left-border-emph");
 
                 // Hide the previous pane
