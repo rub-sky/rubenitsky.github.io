@@ -14,7 +14,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Home - Ruben Piatnitsky</title>
+    <title>Ruben Piatnitsky</title>
   </head>
 
   <body>
@@ -25,11 +25,17 @@
           <li class="active"><a href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a id="btnContact" href="contact.html">Contact</a></li>
           <li><a href="https://github.com/ruv-prog-so" target="_blank">Github</a></li>
         </ul>
       </div>
     </nav>
+
+    <!-- jumbotron for contact information -->
+    <div id="contactPanel" class="jumbotron hidden">
+      <p>Thank you for your interest! Please click the button below to send me an email.</p>
+      <a class="btn btn-lg btn-success" href="mailto:r.piatnitsky@gmail.com" role="button">r.piatnitsky@gmail.com</a>
+    </div>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
     <div class="jumbotron">
@@ -42,6 +48,7 @@
               <h1><img src="images/img_rp_sm.jpg" class="img-circle vertical-align" style="vertical-align: text-middle;" height="100" width="100" /> Ruben Piatnitsky</h1>
             </div>
             <div class="col-sm-12 text-center">
+              <p>Currently I am a student at Portland</p>
               <p>Strong-minded and highly motivated Computer Science student who is determined to acquire a software developer internship, where my enthusiasm for, and experience in, programming, database, and problem solving skills will be a valued asset to the company.</p>
             </div>
           </div>
@@ -194,11 +201,6 @@
         </div>
         </div>
 
-
-        <div class="row left-border-emph">
-          <h3>References</h3>
-          <span class="col-md-12">Available upon request.</span>
-        </div>
       <!--hr-->
 
     </div> <!-- /container -->
@@ -213,6 +215,20 @@
     <script src="javascripts/jquery-2.2.0.min.js" />
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap-3.3.6/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        var btnContact = $("#btnContact");
 
+        btnContact.click(function(){
+          var contactPanel = $("#contactPanel");
+        
+          if (btnContact.parent().hasClass("active")) {
+            contactPanel.slideDown();
+          } else {
+            contactPanel.slideUp();
+          }
+        });
+      });
+    </script>
   </body>
 </html>
