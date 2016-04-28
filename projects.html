@@ -24,16 +24,23 @@
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="projects.html">Projects</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li id="menuContact"><a href="#contactPanel">Contact</a></li>
                 <li><a href="https://github.com/ruv-prog-so" target="_blank">Github</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- jumbotron for contact information -->
+    <div id="contactPanel" class="jumbotron" style="display:none; background-color: transparent !important;">
+      <div class="container row-centered">
+        <p class="text-primary">Thank you for your interest! Please click the button below to send me an email.</p>
+        <a class="btn btn-lg btn-success" href="mailto:r.piatnitsky@gmail.com" role="button">r.piatnitsky@gmail.com</a>
+      </div>
+    </div>
+
     <div class="container fill">
         <br>
         <div class="col-xs-10 col-sm-9">
-            <h2>Projects</h2>
             <div id="uberevresol" class="pane col-xs-10">
                 <h3>UberEvReSol</h3>
                 <p>Github page: <a href="https://github.com/ruv-prog-so/UberEvresolWin10">https://github.com/ruv-prog-so/UberEvresolWin10</a></p>
@@ -62,6 +69,7 @@
             </div>
         </div>
         <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+            <br>
             <div class="list-group side-menu">
                 <a href="#uberevresol" class="sidemenu list-group-item active" data-item="uberevresol">UberEvReSol</a>
                 <a href="#bulletingroupblast" class="sidemenu list-group-item" data-item="bulletingroupblast">Bulletin Group Blast</a>
@@ -78,29 +86,8 @@
     </footer>
      <!-- /container -->
 
-    <script>
-        $(document).ready(function(){
-            $(".sidemenu").click(function(){
-                var itemId = $(this).data("item");
-
-                // Set the item to be active after removing other active items.
-                $(".sidemenu.active").removeClass("active").removeClass("left-border-emph");
-                $(this).addClass("active").addClass("left-border-emph");
-
-                // Hide the previous pane
-                $(".pane:visible").each(function(){
-                    $(this).hide()
-                });
-
-                // Show the selected Item pane
-                $("#"+itemId).show();
-            });
-        });
-    </script>
-
-
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bootstrap-3.3.6/js/bootstrap.min.js"></script>
-
+    <script src="javascripts/main.js"></script>
 </body>
 </html>
