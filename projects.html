@@ -23,6 +23,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="index.html">Home</a></li>
                 <li class="active"><a href="projects.html">Projects</a></li>
+                <!--li><a href="about.html">About</a></li-->
                 <li id="menuContact"><a href="#contactPanel">Contact</a></li>
                 <li><a href="https://github.com/ruv-prog-so" target="_blank">Github</a></li>
             </ul>
@@ -37,38 +38,37 @@
       </div>
     </div>
 
-    <div class="container fill">
+    <div class="container fill" style="min-height: 100%; height: 100%;">
         <br>
-        <div class="col-xs-10 col-sm-9">
-            <div id="uberevresol" class="pane">
+        <div class="col-xs-10 col-sm-9" style="background-color: #fff; min-height: 100%; height: 100%;">
+            <div id="uberevresol" class="pane col-xs-10">
                 <h3>UberEvReSol</h3>
                 <p>Github page: <a href="https://github.com/ruv-prog-so/UberEvresolWin10">https://github.com/ruv-prog-so/UberEvresolWin10</a></p>
                 <span class="col-md-4"><img src="images/uberevresol_screen1.JPG"  class="" height="100%" width="100%"></span>
                 <p>Super Event recording software is a program that allows a user to keep track of their audio recordings. This software is ideal for people who record audio of speakers or musical audio and want to organize it in a meaningful way. The user will be able to store subjects of their recordings and then Sessions with tracks. This software is using the Universal Windows Platform (UWP) framework. The front end is made in XAML, coding done in C# and the database is made using SQLite. Interactions between the code and the database is achieved through the .Net Entity Framework.</p>
                 <p>This is a personal project that I work on during my spare time as a hobby, so updates will come as I have free time from my studies.</p>
             </div>
-            <div id="bulletingroupblast" class="pane" style="display: none;">
+            <div id="bulletingroupblast" class="pane col-xs-10" style="display: none;">
                 <h3>Bulletin Group Blast</h3>
                 <p>Github page: <a href="https://github.com/ruv-prog-so/BulletinGroupBlast">https://github.com/ruv-prog-so/BulletinGroupBlast</a></p>
                 <p>Bulletin Group Blast is an app for social networking within an organization. This app is for situations when an organization is getting big and is subdivided into groups. Each group is independent in some way, but is still a part of this organization. This app allows organizations to push announcements, events, discussions at the organization level, group level and individual level. For example, a church is one organization that has various age groups. In the Bulletin Group Blast app you would create a group for elders, staff, youth, parents, etc. Then the administrator of the group can then push out calendar events, announcements, conversations and notifications for their specific group to synchronize everyone that joined the group.</p>
                 <p>This project was an assignment for an Open Source class that I was taking. It is an android app that was put together using the Android Studio. The user interface was put together using built in features defined in XML and then functionality given through backend Java code. The persistent data or database used is SQLite. Most of the fundamental user interface, data structures and database is constructed, but functionality is still limited. I have decided to discontinue this project due to a lack of available time. Maybe I will continue it in the future.</p>
 
             </div>
-            <div id="cvproj1" class="pane" style="display: none;">
+            <div id="cvproj1" class="pane col-xs-10" style="display: none;">
                 <h3>Computer Vision Project 1</h3>
                 <p>Github page: <a href="https://github.com/ruv-prog-so/cs410_cv_project_1">https://github.com/ruv-prog-so/cs410_cv_project_1</a></p>
                 <p>This project is an assignment for my computer vision class. The assignment was to make a hybrid image generator. This means that if you were to take two images and combine them in such a way that when up close you would see the first image and further away you would only see the second image. It uses the <a href=www.opencv.org>opencv</a> libraries in a windows command prompt project within Visual Studio. The coding language used is C++.</p>
 
             </div>
-            <div id="cvproj2" class="pane" style="display: none;">
+            <div id="cvproj2" class="pane col-xs-10" style="display: none;">
                 <h3>Computer Vision Project 2</h3>
                 <p>Github page: <a href="https://github.com/ruv-prog-so/cs410_cv_project_2">https://github.com/ruv-prog-so/cs410_cv_project_2</a> </p>
                 <p>This is the second project for my computer vision class. It is basically a work in progress currently. This project uses C++ and <a href=www.opencv.org>opencv</a> libraries to achieve object recognition and object tracking. For the object recognition portion I am using machine learning with Haar cascade classifiers. The tracking part is something that I am still working on and have not fulling decided which method to use. This project is also done in Visual Studio.</p>
 
             </div>
         </div>
-        <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
-            <br>
+        <div id="sidebar" class="col-xs-6 col-sm-3 sidebar-offcanvas">
             <div class="list-group side-menu">
                 <a href="#uberevresol" class="sidemenu list-group-item active" data-item="uberevresol">UberEvReSol</a>
                 <a href="#bulletingroupblast" class="sidemenu list-group-item" data-item="bulletingroupblast">Bulletin Group Blast</a>
