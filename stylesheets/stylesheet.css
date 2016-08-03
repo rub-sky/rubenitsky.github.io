@@ -1,3 +1,22 @@
+body {
+  background-color: #efefef !important;
+}
+
+.image-back {
+  background-image: url('../images/sunshine_strip.jpg');
+  background-size: cover;
+  background-position: 0% 60%;
+  background-repeat: no-repeat;
+  text-shadow: -1px 0 #efefef, 0 1px #efefef, 1px 0 #efefef, 0 -1px #efefef;
+  -webkit-box-shadow: 0px 12px 54px -6px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 12px 54px -6px rgba(0,0,0,0.28);
+  box-shadow: 0px 12px 54px -6px rgba(0,0,0,0.28);
+}
+
+.topmost {
+  z-index: 999;
+}
+
 .jumbotron-custom {
     background-color: #efefef;
 }
@@ -8,6 +27,7 @@
     padding-left: 15px;
     margin-bottom: 10px;
     padding-bottom: 10px;
+    background-color: #fff;
 }
 
 .right-border-emph {
