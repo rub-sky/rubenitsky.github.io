@@ -2,11 +2,17 @@
 
 $(document).ready(function(){
   var menuContact = $("#menuContact");
+  var menuAbout = $("#menuAbout");
 
+ // Contact info toggle
   menuContact.click(function(){
-    var contactPanel = $("#contactPanel");
-    contactPanel.slideToggle();
+    $("#contactPanel").slideToggle();
   });
+
+ // About section toggle
+ menuAbout.click(function() {
+    $("#aboutPanel").slideToggle();
+ });
 
   // Project page side menu
   $(".sidemenu").click(function(){
