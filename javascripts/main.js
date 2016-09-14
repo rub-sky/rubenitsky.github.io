@@ -1,12 +1,13 @@
 //console.log('This would be the main JS file.');
 
-$(document).ready(function(){
+$(document).ready(function() {
   var menuContact = $("#menuContact");
   var menuAbout = $("#menuAbout");
 
  // Contact info toggle
-  menuContact.click(function(){
+  menuContact.click(function() {
     $("#contactPanel").slideToggle();
+    menuContact.toggleClass("active");
   });
 
  // About section toggle
@@ -15,7 +16,7 @@ $(document).ready(function(){
  });
 
   // Project page side menu
-  $(".sidemenu").click(function(){
+  $(".sidemenu").click(function() {
       var itemId = $(this).data("item");
 
       // Set the item to be active after removing other active items.
@@ -23,7 +24,7 @@ $(document).ready(function(){
       $(this).addClass("active").addClass("left-border-emph");
 
       // Hide the previous pane
-      $(".pane:visible").each(function(){
+      $(".pane:visible").each(function() {
           $(this).hide()
       });
 
