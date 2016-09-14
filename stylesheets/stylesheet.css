@@ -21,33 +21,39 @@ body {
     background-color: #efefef;
 }
 
+.img-avatar-align {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
 .left-border-emph {
-    border: 1px solid #efefef;
-    border-left: 7px solid #99ccff;
-    padding-left: 15px;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    background-color: #fff;
+    border-left: 7px solid #99ccff !important;
 }
 
-.right-border-emph {
-    border: 1px solid #cfcfcf;
-    border-right: 5px solid #efefef;
-    padding-right: 15px;
+.left-border-emph-green {
+    border-left: 7px solid #88d688 !important;
 }
 
-.subtle-bottom-border {
-    border-bottom: 1px solid #efefef;
-    margin-bottom: 10px;
+.left-border-emph-teal {
+    border-left: 7px solid #85dcd7 !important;
 }
 
-.subtle-bottom-border div p {
-     margin-bottom: 3px;
- }
-
-.row-centered {
-    text-align:center;
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
 }
+
+.row > [class*='col-'] {
+	 display: flex;
+	 flex-direction: column;
+}
+
 .no-padding {
     padding: 0 !important;
     margin: 0 !important;
@@ -99,8 +105,12 @@ body {
   padding-bottom: 10px;*/
 }
 
+.sidebar {
+
+}
+
 .sidemenu {
-  
+
 }
 
 .caption-mod {
