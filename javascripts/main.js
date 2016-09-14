@@ -30,4 +30,9 @@ $(document).ready(function(){
       // Show the selected Item pane
       $("#"+itemId).show();
   });
+
+  // For image carousel on projects page
+	$('.carousel').carousel({
+		interval: 4500
+	})
 });
