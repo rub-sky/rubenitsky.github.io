@@ -4,17 +4,31 @@
     <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="scripts/overview/graph.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 
     <link href="bootstrap-3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src='http://d3js.org/d3.v3.min.js'></script>
     <script src="scripts/jquery-2.2.0.min.js" ></script>
+    <script src="scripts/overview/edges.js" ></script>
+    <script src="scripts/overview/infoTip.js" ></script>
+    <script src="scripts/overview/nodes.js" ></script>
+    <script src="scripts/overview/config.js" ></script>
+    <script src="scripts/overview/sampleGraphData.js" ></script>
     <![endif]-->
 
     <script>
       $(document).ready(function () {
+
+        // d3.json('scripts/overView/sampleGraphData.json', function(err, graphD) {
+          // update (graphData, selectedProjectId, rootId = parseInt(PROJECT_AS_ROOT))
+          // update(graphD, 1, 1);
+        // });
+
+
         // For image carousel on projects page
       	$('.carousel').carousel({
       		interval: 4500
@@ -160,7 +174,14 @@
               </div>
               <br>
               <p>The project’s foundation is Node.js with Express.js as the MVC framework. My primary role was to work with Michael Hansen to configure the visual appearance and functionality of the graph with data from the REST api. We used the D3.js library to make the implementation process easier and the finish product more robust. I also had the opportunity to work on some of the views and code running on the server side. If you want more detailed information about the project then you can visit the github page.</p>
-              <p><a href="http://www.jamasoftware.com/blog/psu-cs-rest-api/?utm_campaign=aug_blog_promotion&utm_source=linkedin&utm_medium=social" target="_blank">View Jama's blog post of our presentation.</a></p>
+              <p class="alert alert-info"><a href="http://www.jamasoftware.com/blog/psu-cs-rest-api/?utm_campaign=aug_blog_promotion&utm_source=linkedin&utm_medium=social" target="_blank">View Jama's blog post of our presentation.</a></p>
+              <h4>Interactive graph with sample data</h4>
+              <div id="d3Container" class="border-top-bottom">
+                <div class="nodeInfoTip"></div>
+              </div>
+              <p><u>Collapse a node:</u> double click the nodes that have downstream items. To uncollapse, double click it again</p>
+              <p><u>Highlight nodes:</u> shold down SHIFT + click on a node. To unhighlight, SHIFT + click again.</p>
+              <p><u>Zoom and Pan:</u> scroll your mouse wheel for zoom and click and drag anywhere to pan.</p>
             </div>
           </div>
           <br>
