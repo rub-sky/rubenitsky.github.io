@@ -4,8 +4,8 @@ export interface Position {
     title: string;
     startDate: Date;
     endDate: Date;
-    logo: string;
-    duties: Array<string>;
+    logo?: string;
+    experience: Array<string>;
     accomplishments: Array<string>;
     isVolunteering: boolean;
 }
