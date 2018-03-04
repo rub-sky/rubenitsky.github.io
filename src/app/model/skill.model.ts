@@ -1,9 +1,8 @@
 export interface Skill {
     label: string;
-    examples: string;
-    projects: Array<Project>;
+    examples?: string;
+    projects?: Array<Project>;
     category: string;
-    isTech: boolean;
     proficiencyRating: number;
 }
 

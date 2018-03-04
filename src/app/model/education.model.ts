@@ -1,15 +1,14 @@
-import { Skill } from "./skill..model";
+import { Skill } from './skill.model';
 
 export interface Education {
     institution: string;
     state: string;
-    startYear: Date;
-    endYear: Date;
-    degree: Array<string>;
+    yearFinished: Date;
+    degrees: Array<string>;
 }
 
 export interface Classes {
     title: string;
-    skills: Array<Skill>;
+    skills?: Array<string>;
     category: string;
 }
