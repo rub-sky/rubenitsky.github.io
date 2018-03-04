@@ -1,6 +1,6 @@
 import {Position} from '../../app/model/position.model';
 
-const experience: Array<Position> = [
+export const experience: Array<Position> = [
     {
         company: 'Total Web Services',
         title: 'Web Developer',

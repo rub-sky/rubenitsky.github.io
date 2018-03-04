@@ -1,6 +1,6 @@
 import {Education, Classes} from '../../app/model/education.model';
 
-const education: Array<Education> = [
+export const education: Array<Education> = [
     {
         institution: 'Portland State University',
         state: 'OR',
@@ -21,7 +21,7 @@ const education: Array<Education> = [
     }
 ]
 
-const classes: Array<Classes> = [
+export const classes: Array<Classes> = [
     { title: 'Discrete Data Structures', skills: ['C++'], category: 'Computer Science' },
     { title: 'Programming Systems', skills: ['C++'], category: 'Computer Science' },
     { title: 'Algorithms', category: 'Computer Science' }, { title: 'Compiler Design', skills: ['Java'], category: 'Computer Science' },

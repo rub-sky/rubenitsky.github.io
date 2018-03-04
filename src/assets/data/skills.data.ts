@@ -1,6 +1,6 @@
 import {Skill} from '../../app/model/skill.model';
 
-const skillSet: Array<Skill> = [
+export const skillSet: Array<Skill> = [
     { label: 'C', category: 'Coding Languages', proficiencyRating: 5 },
     { label: 'C++', category: 'Coding Languages', proficiencyRating: 5 },
     { label: 'Chapel', category: 'Coding Languages', proficiencyRating: 5 },
