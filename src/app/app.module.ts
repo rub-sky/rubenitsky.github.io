@@ -5,11 +5,13 @@ import {MatChipsModule, MatChip, MatChipList} from '@angular/material';
 
 import {AppComponent} from './app.component';
 import { EducationComponent } from './education/education.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EducationComponent
+    EducationComponent,
+    ExperienceComponent
   ],
   imports: [
     BrowserModule,
