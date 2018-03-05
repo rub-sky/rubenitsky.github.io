@@ -1,4 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<mat-toolbar>
+  <span>My Application</span>
+</mat-toolbar>
+  
 <div class="container">
   <h1>
     Welcome to {{title}}!
@@ -13,5 +17,7 @@
 </div>
 
 <mat-chip-list>
-  <mat-chip>item.label</mat-chip>
+  <ng-template *ngFor="let item of skills">
+    <mat-chip>item.label</mat-chip>
+  </ng-template>
 </mat-chip-list>
