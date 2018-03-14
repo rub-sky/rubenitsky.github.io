@@ -1,3 +1,55 @@
-<p>
-  skills works!
-</p>
+<div>
+  <span *ngFor="let item of skills" class="badge badge-pill"
+  [ngClass]="{
+    'badge-primary': item.category === 'Coding Languages',
+    'badge-success': item.category === 'Persistent Storage',
+    'badge-info': item.category === 'Frameworks',
+    'badge-warning': item.category === 'Tools'
+  }">{{ item.label}}</span>
+
+  <ng-template *ngFor="let item of skills">
+    <span>item.label</span>
+  </ng-template>
+</div>
+
+<h3><span class="glyphicon glyphicon-wrench"></span> Skills</h3>
+<div class="row">
+  <div class="col-md-6 col-xs-6 col-sm-6">
+    <div class="left-border-emph-green panel panel-default">
+      <div class="panel-heading"><h4 class="panel-title">Coding Languages</h4></div>
+      <div class="panel-body">
+        C, C++, Chapel, VB.Net, C#.Net, Java, HTML5, CSS, JavaScript, JQuery, PHP
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-xs-6 col-sm-6">
+    <div class="left-border-emph-green panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">Persistent Storage</h4>
+      </div>
+      <div class="panel-body">
+        SQLite, MySQL, MS SQL Server, XML, JSON, CSV, PostgreSQL
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6 col-xs-6 col-sm-6">
+    <div class="left-border-emph-green panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">Frameworks</h4>
+      </div>
+      <div class="panel-body">
+        Universal Windows Platform (UWP), ASP.Net MVC, MS Entity Framework, Node.js, Express, D3.js, Mocha.js, Chai.js, Bootstrap, OpenCL, OpenMP, REST API, Ext.js
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-xs-6 col-sm-6">
+    <div class="left-border-emph-green panel panel-default">
+      <div class="panel-heading"><h4 class="panel-title">Tools</h4></div>
+      <div class="panel-body">
+        Vagrant, GIT, Microsoft Office, Adobe Photoshop, Gimp, Jama Software, Linux, Microsoft Windows, Microsoft Visual Studio, WebStorm, Android Studio
+      </div>
+    </div>
+  </div>
+</div>

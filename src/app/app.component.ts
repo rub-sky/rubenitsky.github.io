@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {skillSet} from '../assets/data/skills.data';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +7,5 @@ import {skillSet} from '../assets/data/skills.data';
 })
 export class AppComponent {
   title = 'app';
-  public skills = skillSet;
+  
 }
